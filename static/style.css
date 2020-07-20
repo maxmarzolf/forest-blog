@@ -1,0 +1,30 @@
+.title{
+    font-weight: bold;
+}
+
+.main_content{
+    padding: 20px;
+    margin: auto;
+    margin-top: 25px;
+    text-align: center;
+    border: 2px solid black;
+    width: 800px;
+}
+
+nav {
+    background-color: black;
+    padding: 10px;
+    font-size: 20px;
+    color: white;
+}
+h3 {
+    display: inline-block;
+}
+
+nav > a {
+    color: white;
+    float: right;
+    display: inline;
+    padding-left:10px;
+    padding-right:10px;
+}
