@@ -24,3 +24,7 @@ nav > a {
     padding-left:10px;
     padding-right:10px;
 }
+
+a:hover {
+    color: #a7f198;
+}
