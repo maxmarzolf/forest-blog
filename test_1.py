@@ -1,5 +1,5 @@
 import pytest
-from app import app
+from app import forest_blog
 
 
 def test_assert():
@@ -13,5 +13,5 @@ def test_home_page(client):
 
 @pytest.fixture
 def client():
-    client = app.test_client()
+    client = forest_blog.test_client()
     return client
