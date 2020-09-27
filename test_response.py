@@ -11,6 +11,11 @@ def test_home_page(client):
     assert response.status_code == 200
 
 
+def test_create_post_page(client):
+    response = client.get('/pages/create_post.html')
+    assert response.status_code == 200
+
+
 @pytest.fixture
 def client():
     client = forest_blog.test_client()
