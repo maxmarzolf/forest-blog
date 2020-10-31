@@ -1,20 +1,17 @@
-from flask import Flask, render_template
+from flask import Flask
 
-forest_blog = Flask(__name__)
-
-
-@forest_blog.route('/', methods=['GET'])
-def show_homepage():
-    return render_template('pages/home.html')
+app = Flask(__name__)
 
 
-@forest_blog.route('/pages/create_post.html', methods=['GET'])
-def show_create_post():
-    return render_template('pages/create_post.html')
+def main():
+    register_blueprints()
+    app.run(debug=True)
+
+
+def register_blueprints():
+    from views import home
+    app.register_blueprint(home.blueprint)
 
 
 if __name__ == '__main__':
-    forest_blog.run()
-
-
-
+    main()

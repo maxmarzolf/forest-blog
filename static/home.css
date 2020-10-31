@@ -5,6 +5,13 @@
     border: 2px solid black;
     width: 800px;
 }
+.first_five{
+    padding: 20px;
+    margin: 25px auto auto;
+    text-align: center;
+    border: 2px solid red;
+    width: 800px;
+}
 
 nav {
     background-color: black;
